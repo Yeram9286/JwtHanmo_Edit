@@ -1,4 +1,4 @@
-package com.example.jwtlogin;
+package com.example.jwtlogin.dto;
 
 public class UserCredentials {
     private String username;

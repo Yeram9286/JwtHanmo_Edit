@@ -1,4 +1,4 @@
-package com.example.jwtlogin;
+package com.example.jwtlogin.model;
 
 
 import jakarta.persistence.Entity;

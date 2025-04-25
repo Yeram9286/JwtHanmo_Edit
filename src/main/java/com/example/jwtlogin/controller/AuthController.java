@@ -1,13 +1,15 @@
-package com.example.jwtlogin;
+package com.example.jwtlogin.controller;
 
+import com.example.jwtlogin.dto.UserCredentials;
+import com.example.jwtlogin.model.User;
+import com.example.jwtlogin.repository.UserRepository;
+import com.example.jwtlogin.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.jwtlogin.SecurityConfig;
 
 @RestController
 public class AuthController {

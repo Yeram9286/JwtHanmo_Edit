@@ -1,5 +1,7 @@
-package com.example.jwtlogin;
+package com.example.jwtlogin.service;
 
+import com.example.jwtlogin.model.User;
+import com.example.jwtlogin.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,14 +11,13 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
-import java.util.Locale;
 
 @Component
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
 
     @Autowired
-    private com.example.jwtlogin.UserRepository userRepository;
+    private UserRepository userRepository;
 
 
     @Override

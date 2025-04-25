@@ -1,8 +1,7 @@
-package com.example.jwtlogin;
+package com.example.jwtlogin.filter;
 
-import com.example.jwtlogin.CustomUserDetailsService;
-import com.example.jwtlogin.JwtUtil;
-import com.example.jwtlogin.User;
+import com.example.jwtlogin.util.JwtUtil;
+import com.example.jwtlogin.service.CustomUserDetailsService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
