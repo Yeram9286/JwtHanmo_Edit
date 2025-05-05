@@ -13,3 +13,10 @@ spring:
     show-sql: true
     properties:
       hibernate.format_sql: true
+
+jwt:
+  secret-key: ENC(Xb9xPquHAzL5UknxqRtC++1vHkpUIqXq)
+
+jasypt:
+  encryptor:
+    password: ${JASYPT_ENCRYPTOR_PASSWORD}
